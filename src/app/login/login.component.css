@@ -1,33 +1,89 @@
 .login-container {
-    max-width: 300px;
-    margin: 0 auto;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: #333;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.login-container input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.success {
+  color: #28a745;
+}
+
+.error {
+  color: #dc3545;
+}
+
+@media (max-width: 500px) {
+  .login-container {
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
   }
-  
-  .login-container div {
-    margin-bottom: 15px;
-  }
-  
-  button {
-    width: 100%;
+
+  .login-container input, button {
+    font-size: 14px;
     padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
   }
-  
-  button[disabled] {
-    background-color: #cccccc;
-  }
-  
-  .success {
-    color: green;
-  }
-  
-  .error {
-    color: red;
-  }
-  
+}
